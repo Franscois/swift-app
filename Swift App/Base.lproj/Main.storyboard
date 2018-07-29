@@ -34,25 +34,41 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3If-Ig-OVq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ns-zV-lfR">
-                                <rect key="frame" x="148" y="111" width="79" height="30"/>
-                                <state key="normal" title="PUSH ME 2"/>
-                                <connections>
-                                    <action selector="buttonTapped2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l17-aT-INg"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2lW-AV-AVG">
+                                <rect key="frame" x="138" y="121" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="w08-XV-HgL"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L8F-B3-ivt">
+                                <rect key="frame" x="138" y="171" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="mgZ-7U-wSZ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Mdg-8P-lgP" firstAttribute="top" secondItem="JPM-5e-cts" secondAttribute="bottom" constant="10" id="Oor-SN-wOu"/>
+                            <constraint firstItem="L8F-B3-ivt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T1p-ex-8WY"/>
                             <constraint firstItem="JPM-5e-cts" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="WvJ-OX-hDb"/>
-                            <constraint firstItem="7Ns-zV-lfR" firstAttribute="top" secondItem="Mdg-8P-lgP" secondAttribute="bottom" constant="10" id="axO-ef-VZV"/>
-                            <constraint firstItem="7Ns-zV-lfR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rVh-Cl-blJ"/>
+                            <constraint firstItem="2lW-AV-AVG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XSj-b9-B5z"/>
+                            <constraint firstItem="2lW-AV-AVG" firstAttribute="top" secondItem="Mdg-8P-lgP" secondAttribute="bottom" constant="20" id="mYf-6A-DLW"/>
+                            <constraint firstItem="L8F-B3-ivt" firstAttribute="top" secondItem="2lW-AV-AVG" secondAttribute="bottom" constant="20" id="n6r-lw-z74"/>
                             <constraint firstItem="JPM-5e-cts" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="shu-2V-oN4"/>
                             <constraint firstItem="Mdg-8P-lgP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uQl-3j-r9I"/>
+                            <constraint firstItem="2lW-AV-AVG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yP4-PM-GJ5"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="2lW-AV-AVG" id="9FO-BN-Sdb"/>
+                        <outlet property="text2" destination="L8F-B3-ivt" id="ZCH-Ry-tPx"/>
                         <outlet property="theLabel" destination="JPM-5e-cts" id="cnu-fH-Ggc"/>
                     </connections>
                 </viewController>
